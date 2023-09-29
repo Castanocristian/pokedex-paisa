@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.body{
+    max-width: 100%;
+}
+
+html {
+    height: 100%;
+    max-width: 100%;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    background-image: url(../imagenes/fondo.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.PokedexIdPages{
+    display: flex;
+    text-align: center;
+}
+.principal{
+
+    position: relative;
+    top:30%;
+    right: 0;
+    left: 1%;
+}
+
+h1,h2,h3, h4, p, ul , hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+}
+ul{
+    padding-left: 0;
+    list-style: none;
+    display: grid;
+}
+img {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    font-size: inherit;
+    outline: none;
+    border: 1.3rem;
+    border-color: black;
+}
+button {
+    border: 0.3rem;
+    font-family: inherit;   
+    border: 1.3rem ;
+    border-color: red;
+    cursor: pointer;
+    border-color: red;
+}
