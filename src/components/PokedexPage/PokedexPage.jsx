@@ -4,6 +4,7 @@ import { useEffect, useRef , useState} from "react"
 import PokeCard from "./PokeCard"
 import SelectType from "./SelectType"
 import './styles/Pokecard.css'
+import './styles/PokedexPage.css'
 
 
 const PokedexPage = () => {
@@ -37,13 +38,15 @@ const handleSearch = e =>{
   return (
     <div>
       <p className="titulo"> Hi {trainer} </p>
-      <form className="formulario" onSubmit={handleSearch}>
-        <input ref={inputSearch}type="text" />
-        <button className="boton">Search Pokemon</button>
-      </form>
-      <SelectType 
-      setTypeSelected={setTypeSelected}
-       />
+      <div className="filters-pokemon">
+        <form onSubmit={handleSearch}>
+          <input className="formulario" ref={inputSearch}type="text" />
+          <button className="boton">Search Pokemon</button>
+        </form>
+        <SelectType 
+        setTypeSelected={setTypeSelected}
+        />
+      </div>
       <div className="Select">
         {
           pokefiltered?.map( poke=>(

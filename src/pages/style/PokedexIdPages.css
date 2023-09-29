@@ -1,0 +1,27 @@
+.Poderes {
+    
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    font-size: 1.5em;
+}
+.lista{
+    background-color: rgb(140, 100, 215);
+    padding: 10px;
+    border:1px solid black;
+    margin: 5px;
+    list-style: none;
+}
+.Pokename{
+    font-size: 100px;
+    padding-bottom:0.3em ;
+    background-color: white;
+    color: black;
+}
+
+.Texto{
+    background-color: red;
+    color:black;
+    padding: 0.3em;
+}
